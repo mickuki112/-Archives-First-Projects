@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title></title>
+	
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	<link rel="stylesheet" href="styleprojekt3.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+	
+
+	<script type="text/javascript">
+		function sprawdz()
+		{
+
+		var def =document.getElementById("def").value;
+		var oof =document.getElementById("oof").value;
+						var def1=0;
+						var oof1=0;
+						var a=(def+oof)/2+10;
+				for (let x=0; x<a; x++)                                                   ///////czeba tu popracowac nad optymalizacją
+							if(def>=1 && oof>=2){//{break;}
+			{		var los1 = 0;
+					var los2 = 0;
+					var los3 = 0;
+					var los4 = 0;
+					var los5 = 0;
+					los1 =Math.floor(Math.random() * 6)+1;
+					if(2<oof){los2 =Math.floor(Math.random() * 6)+1;}
+					if(3<oof){los3 =Math.floor(Math.random() * 6)+1;}
+					los4 =Math.floor(Math.random() * 6)+1;
+					if(1<def){los5 =Math.floor(Math.random() * 6)+1;}
+					var kos1=los1;
+					var kos2=0;
+					var kos3;
+					var kos4;
+					if(kos1<los2){
+						kos1=los2;
+						if(los1<los3)kos2=los3;else
+									 kos2=los1;
+					}
+					if(kos1<los3){
+						kos1=los3;
+						if(los1<los2)kos2=los2;else
+									 kos2=los1;
+					}
+					
+					
+					if(kos1==los1){
+							if(los2<los3)kos2=los3;else
+										 kos2=los2;
+					}
+					if(los4>los5){kos3=los4;kos4=los5;}
+					else		 {kos4=los4;kos3=los5;}
+					//________________________________________
+					
+					
+
+			if(kos3>=kos1){def1++;--oof;}else {oof1++;--def;}
+			if(kos4!=0 && kos2!=0){if(kos4>=kos2){def1++;--oof;}else {oof1++;--def;}}
+				//document.getElementById("o1").innerHTML="ofensywa"+los1+"_"+los2+"_"+los3+"__________"+kos1+"_"+kos2+"";
+				//document.getElementById("o2").innerHTML="defensywa"+los4+"_"+los5+"__________"+kos3+"_"+kos4+"";
+					//document.getElementById("win1").innerHTML="of"+x+";
+			}}
+	document.getElementById("o2").innerHTML="<h2>defensywa</h2>Pokonane "
+											+def1+"</br>Poległe "
+											+oof1+"</br>Pozostałe "
+											+def+"";
+	document.getElementById("o1").innerHTML="<h2>ofensywa</h2>Pokonane "
+											+oof1+"</br>Poległe "
+											+def1+"</br>Pozostałe "
+											+oof+"";
+	}
+	</script>
+	
+</head>
+	
+<body>
+	<div id="content">
+		<div id="o3">
+		
+			<h1>Ryzyko-Symulator</h1>
+			<input type="textDef"id="def" placeholder="Defensywa">	
+			</br>
+			<input type="textOof"id="oof" placeholder="Ofensywa">
+			</br>
+			<input  type="submit" value="Przeprowadź symulacje" id="przycisk" onclick="sprawdz()">
+		</div>
+		<div  id="o1"></div>
+		<div  id="o2"></div>
+		<div style="clear:both"></div>
+	</div>
+	<div id="footer">© by Michał Kubiak</div>
+	
+</body>
+</html>

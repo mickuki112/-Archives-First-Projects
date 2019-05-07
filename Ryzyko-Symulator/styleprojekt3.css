@@ -1,0 +1,133 @@
+body{
+	margin:0px;
+	text-align:center;
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("img/hexellence.png");
+	font-family: 'Kalam', cursive;
+
+	}
+#content
+	{
+		width:350px;
+		height:420px;
+		background:white;
+		margin:0 auto;
+		margin-top:50px;
+		margin-left: auto;
+	    margin-right: auto;
+		padding: 50px;
+		-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+		-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+		box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	}
+
+div > div
+	{
+		height:150px;
+		font-size:19px;
+	}
+#o1
+	{	float:left;
+		width:172px;
+		border-right: 6px grove #fff6c6;
+	}
+#o2
+	{	float:left;
+		width:172px;
+	}
+#o3
+	{
+		height:250px;
+	}
+	input[type=textDef],
+input[type=textOof]
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=textDef]:focus,
+input[type=textOof]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #ffe135;
+	background-color: #fff1aa;
+	color: #c6a700;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #ffe135;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #fff145;
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #c6a700;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #c6a700;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #c6a700;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #c6a700;
+}
+#footer
+{
+		font-size:11px;
+}
