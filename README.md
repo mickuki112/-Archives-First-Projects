@@ -2,6 +2,10 @@
 
 This is a few of my first projects which I created.
 
+### MasterLangg
+<i>MasterLangg</i> is a language translations game in which the player has to select a random language based on a translated sentence or word entered by the player.
+> **Official GitHub page** https://github.com/mateuszpijanowski/masterlangg
+
 ### Ryzyko Symulator
 The <i>Ryzyko Symulator</i> is a web application that will performs simulation of the game's struggle [Ryzyko](https://www.empik.com/winning-moves-gra-strategiczna-ryzyko-gra-o-tron-winning-moves,p1143042124,zabawki-p?gclid=CjwKCAiArK_fBRABEiwA0gOOc7d8c3oeenQpOEAgxd_XnUgjCxhtN-SMeFiWQOGl92VBunHUbmZH3BoCZ4YQAvD_BwE&gclsrc=aw.ds).<br /> 
 Thanks this game you can run smoother and more enjoyable without boring walks.
